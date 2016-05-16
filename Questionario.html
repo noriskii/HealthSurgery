@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="BR">
+
+<head>
+    <meta charset="UTF-8">
+    <!--BootStrap-->
+    <link rel="stylesheet" href="sourceLib/bootstrap/css/bootstrap.css" class="href">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="sourceLib/font-awesome/css/font-awesome.min.css">
+    <!--JQuery-->
+    <script src="sourceLib/jquery.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="StyleMenu.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Questionário</title>
+</head>
+
+<body>
+    <div class="container-fluid text-left">
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+            <div class="well">
+                <div class="navbar-header">
+                    <button class="botao icon-button">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="sidebar-overlay"></div>
+                <aside class="sidebar sidebar-default sidebar-fixed-left" id="sidebar" role="navigation">
+                    <div class="sidebar-header">
+                        <div class="top-bar"></div>
+                        <button type="button" class="botao" style="display: initial;">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </button>
+                        <div class="sidebar-image">
+                            <img src="Images/iconUser.png" alt="">
+                        </div>
+                        <a href="#settings-dropdown" class="sidebar-brand" data-toggle="dropdown">
+                    luckaugusto@gmail.com
+                    <b class="caret"></b>
+                </a>
+                    </div>
+                    <ul class="nav sidebar-nav">
+                        <li class="dropdown">
+                            <ul class="dropdown-menu" id="settings-dropdown">
+                                <li>
+                                    <a href="Medico.html" tabindex="-1">
+                                Minha Conta
+                            </a>
+                                </li>
+                                <li>
+                                    <a href="AlterarSenha.html" tabindex="-1">
+                                Alterar Senha
+                            </a>
+                                </li>
+                                <li>
+                                    <a href="Especialidade.html" tabindex="-1">
+                                Adicionar Especialidade
+                            </a>
+                                </li>
+                                <li>
+                                    <a href="Login.html" tabindex="-1">
+                                Desconectar
+                            </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                        Pesquisar
+                        <b class="caret"></b>
+                    </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="PesquisarMedico.html" tabindex="-1">
+                                Pesquisa Médico
+                            </a>
+                                </li>
+                                <li>
+                                    <a href="PesquisarPaciente.html" tabindex="-1">
+                                Pesquisa Paciente
+                            </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="divide"></li>
+                        <li>
+                            <a href="CadastroPaciente.html">
+                        Novo Paciente
+                    </a>
+                        </li>
+                        <li>
+                            <a href="Paciente.html">
+                        Paciente
+                    </a>
+                        </li>
+                        <li>
+                            <a href="Questionario.html">
+                        Questionário
+                    </a>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="panel-heading text-center">
+                    <h3><b>Questionário Inicial</b></h3>
+                </div>
+                <hr class="hr-black">
+                <img src="Corpo/13.jpg" class="img-responsive" alt="Corpo Masculino">
+                <div class="panel-body">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+                        <div class="row">
+                            <form action="">
+                                <label for="">Nome:</label>
+                                <label for="">Puxar nome do BD</label>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <label for="">Gasta mais do que três horas por dia pensando na aparência?</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="radio displayTypeRspv">
+                                <label>
+                                    <input type="radio" name="radios1" id="optionsRadios1" value="option1" checked>Sim
+                                </label>
+                            </div>
+                            <div class="radio displayTypeRspv">
+                                <label>
+                                    <input type="radio" name="radios1" id="optionsRadios2" value="option2">Não
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <label for="">A insatisfação corporal começou:</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="radio displayTypeRspv">
+                                <label>
+                                    <input type="radio" name="radios2" id="optionsRadios1" value="option1" checked>Infância
+                                </label>
+                            </div>
+                            <div class="radio displayTypeRspv">
+                                <label>
+                                    <input type="radio" name="radios2" id="optionsRadios2" value="option2">Adolescencia
+                                </label>
+                            </div>
+                            <div class="radio displayTypeRspv">
+                                <label>
+                                    <input type="radio" name="radios2" id="optionsRadios2" value="option2">Adulto
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <label for="">Tratamentos estéticos/cirúrgicos já realizados:</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 resetSpace">
+                                <div class="checkbox displayTypeRspv">
+                                    <label>
+                                        <input type="checkbox" value="">Cirurgia Plástica
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 resetSpace">
+                                <div class="checkbox displayTypeRspv">
+                                    <label>
+                                        <input type="checkbox" value="">Odontologia
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 resetSpace">
+                                <div class="checkbox displayTypeRspv">
+                                    <label>
+                                        <input type="checkbox" value="">Dermatologia
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 resetSpace">
+                                <div class="checkbox displayTypeRspv">
+                                    <label>
+                                        <input type="checkbox" value="">Academia
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <label for="">Ja recebeu diagnóstico para:</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="checkbox littleSpace">
+                                <label>
+                                    <input type="checkbox" value="">Ansiedade Social
+                                </label>
+                            </div>
+                            <div class="checkbox littleSpace">
+                                <label>
+                                    <input type="checkbox" value="">Depressão
+                                </label>
+                            </div>
+                            <div class="checkbox littleSpace">
+                                <label>
+                                    <input type="checkbox" value="">Transtorno obsessivo compulsivo
+                                </label>
+                            </div>
+                            <div class="checkbox littleSpace">
+                                <label>
+                                    <input type="checkbox" value="">Transtorno dismórfico corporal
+                                </label>
+                            </div>
+                            <div class="checkbox littleSpace">
+                                <label>
+                                    <input type="checkbox" value="">Dismorfia muscular
+                                </label>
+                            </div>
+                            <div class="checkbox littleSpace">
+                                <label>
+                                    <input type="checkbox" value="">Bulimia nervosa
+                                </label>
+                            </div>
+                            <div class="checkbox littleSpace">
+                                <label>
+                                    <input type="checkbox" value="">Anorexia nervosa
+                                </label>
+                            </div>
+                            <div class="checkbox littleSpace">
+                                <label>
+                                    <input type="checkbox" value="">Transtornos relacionados a substâncias de adição
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <label for="">
+                                    <h3>1. Preocupação com o problema de aparência</h3></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <label for="">Com que frequencia você pensa em seu problema e se sente triste, desmotivado ou chateado?</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios3" id="optionsRadios1" value="option1" checked>Nunca fica chateado, ou nunca pensa no mesmo
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios3" id="optionsRadios2" value="option2">De 1 a 3 vezes no mês
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios3" id="optionsRadios2" value="option3">De 4 a 7 vezes no mês, ou pensa nisso e se sente chateado uma ou duas vezes a cada semana
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios3" id="optionsRadios2" value="option4">De 8 a 11 vezes no mês
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios3" id="optionsRadios2" value="option5">De 11 a 16 vezes no mês, ou pensa nisso em metades dos dias da semana
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios3" id="optionsRadios2" value="option6">De 17 a 21 vezes no mês
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios3" id="optionsRadios2" value="option7">De 22 a 28 vezes no mês, ou pensa nisso quase que diariamente, ficando chateado
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <label for="">
+                                    <h3>2. Afastamento da Atividade Fisica</h3></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <label for="">Durante o último mês, você evitou atividades fisicas como exercicio ou recreação ao ar livre por causa de seu...</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios4" id="optionsRadios1" value="option1" checked>Nenhum afastamento de atividade fisica
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios4" id="optionsRadios2" value="option2">Resposta intermediária - Nenhum ou Pouco
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios4" id="optionsRadios2" value="option3">Evito pouco
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios4" id="optionsRadios2" value="option4">Resposta intermediária - Pouco ou Média
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios4" id="optionsRadios2" value="option5">Evito com média frequência
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios4" id="optionsRadios2" value="option6">Resposta intermediária - Média ou Muito
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <div class="radio displayTypeRspv">
+                                    <label>
+                                        <input type="radio" name="radios4" id="optionsRadios2" value="option7">Evito muito
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
+                                <label for="">
+                                    <h2>Tratamentos em saúde mental:</h2></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="checkbox littleSpace">
+                                <label data-toggle="collapse" data-target="#collapseOne">
+                                    <input type="checkbox" value="">Psiquiatria
+                                </label>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 Space-md">
+                                        <label for="">Quando?</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-10 col-sm-6 col-md-5 col-lg-5 Space-md">
+                                        <form action="">
+                                            <label for="">Ano:</label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-10 col-sm-10 col-md-5 col-lg-5 Space-md-rspv">
+                                        <form action="">
+                                            <label for="">Duração:</label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="checkbox spaceSpecial">
+                                    <label>
+                                        <input type="checkbox" value="">Internação
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="checkbox littleSpace">
+                                <label data-toggle="collapse" data-target="#collapseTwo">
+                                    <input type="checkbox" value="">Psicoterapia
+                                </label>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse in">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 Space-md">
+                                        <label for="">Quando?</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-4 Space-md">
+                                        <form action="">
+                                            <label for="">Ano:</label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 Space-md-rspv">
+                                        <form action="">
+                                            <label for="">Duração:</label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <!--<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-2 col-md-offset-2 col-lg-offset-4">
+                            <input type="submit" class="btn btn-primary btn-block" value="Atualizar">
+                        </div>-->
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-1 resetSpaceRspv">
+                            <input type="submit" class="btn btn-primary btn-block" value="Atualizar">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-1 resetSpaceRspv">
+                            <a href="#" class="btn btn-primary btn-block btn-text-lg" role="button-block">Pacientes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sourceLib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="ControllerMenu.js"></script>
+    <script src="Controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.container-fluid {
+  background-color: rgba(149, 149, 149, 0.9);
+  height: 200px;
+  text-align: center;
+  padding-bottom: 202px;
+}
+.titulo {
+  font-family: "Century Gothic" "Arial";
+  font-size: 55px;
+  text-align: center;
+}
+.textopequeno {
+  font-size: 30px;
+  color: #515e6e;
+  font-family: "Century Gothic" "Arial";
+  text-align: center;
+}
+.row {
+  background-color: rgba(0, 0, 0, 0.75);
+  min-height: 0px;
+  height: 1px;
+}
