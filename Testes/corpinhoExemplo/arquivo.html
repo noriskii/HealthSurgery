@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teste Mapping</title>
+	<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+</head>
+<body>
+	<img src="imageT.jpg" alt="" usemap="#Map"/>
+<map name="Map" id="Map">
+    <area alt="" title="" href="" shape="poly" coords="769,418,737,435,708,468,705,510,720,531,755,530,769,520,783,486,781,433" class="puff" />
+    <area alt="" title="" href="" shape="poly" coords="315,975,276,978,273,963,273,931,280,778" class="puff" />
+    <area alt="" title="" href="" shape="poly" coords="306,822,286,743,299,715,347,801" class="puff" />
+</map>
+
+<script>
+	$('.puff').on('click',function(){
+		//alert('Clicked');
+	})
+</script>
+</body>
+</html>
