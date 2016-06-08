@@ -1,5 +1,5 @@
-# MedSurgSW
-Same as... Trabalho de Conclusão de Curso
+# HealthSurgery - Body Dysmorphic Disorder Diagnosis
+Or... Trabalho de Conclusão de Curso
 
 
 Lucas A. Silva
