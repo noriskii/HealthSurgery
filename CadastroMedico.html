@@ -10,6 +10,8 @@
     <script src="sourceLib/jquery.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="sourceLib/sweetalert2/sweetalert2.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Médico - Quero me Cadastrar</title>
@@ -19,6 +21,11 @@
     <div class="container-fluid text-left">
         <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
             <div class="well">
+               <div class="navbar-header">
+                    <a class="botao icon-button" href="Login.html" style="color:black">
+                        <i class="fa fa-reply fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
                 <div class="panel-heading text-center">
                     <h3><b>Médico - Quero me Cadastrar</b></h3>
                 </div>
@@ -107,7 +114,7 @@
                         </div>
                         <br>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 resetSpaceRspv">
-                            <input type="submit" class="btn btn-primary btn-block" value="Cadastrar">
+                            <input type="submit" class="btn btn-primary btn-block" value="Cadastrar" onclick="message()">
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 resetSpaceRspv">
                             <a href="#" class="btn btn-primary btn-block btn-text-lg" role="button-block">Limpar</a>
@@ -119,6 +126,18 @@
     </div>
     <script src="sourceLib/bootstrap/js/bootstrap.min.js"></script>
     <script src="ControllerJSON.js"></script>
+    <script src="sourceLib/sweetalert2/sweetalert2.min.js"></script>
+    <script>
+    function message() {
+        swal(
+          'Cadastro Realizado com Sucesso!',
+          'Sua conta já esta ativa!',
+          'success'
+        ).then(function() {
+            window.location.href = "Login.html";
+        })
+    }
+    </script>
 </body>
 
 </html>
