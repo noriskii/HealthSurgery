@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--BootStrap-->
+    <link rel="stylesheet" href="sourceLib/bootstrap/css/bootstrap.min.css" class="href">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="sourceLib/font-awesome/css/font-awesome.min.css">
+    <!--JQuery-->
+    <script src="sourceLib/jquery.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="sourceLib/sweetalert2/sweetalert2.min.css">
+    <title>Recuperar Senha</title>
+</head>
+
+<body>
+    <div class="container-fluid text-left">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
+            <br>
+            <div class="well">
+               <a class="botao icon-button" href="Login.html" style="color:black">
+                        <i class="fa fa-reply fa-2x" aria-hidden="true"></i>
+                    </a>
+                <div class="panel-heading text-center">
+                    <h3><b>Recuperar Senha</b></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <form action="">
+                            <label for="">Digite seu e-mail:</label>
+                            <input type="text" class="form-control" placeholder="E-mail para envio...">
+                        </form>
+                    </div>
+                    <hr class="hr-md">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-2 col-md-offset-2 col-lg-offset-4">
+                        <input type="submit" class="btn btn-primary btn-block" value="Enviar" onclick="message()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sourceLib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="sourceLib/sweetalert2/sweetalert2.min.js"></script>
+    <script>
+    function message() {
+          swal(
+              'E-mail enviado com sucesso!',
+              '',
+              'success'
+            )
+    }
+    </script>
+</body>
+
+</html>

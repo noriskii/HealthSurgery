@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teste Mapping</title>
+	<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="mapsize\jquery.rwdImageMaps.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="ImageMapster\dist\jquery.imagemapster.js"></script>
+
+    <style>
+        #Map:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+	<img src="imageT.jpg" alt="" class="img-responsive" usemap="#Map" id="mapa"/>
+<map name="Map" id="Map">
+    <area alt="" title="" shape="poly" coords="769,418,737,435,708,468,705,510,720,531,755,530,769,520,783,486,781,433" class="puff" />
+    <area alt="" title="" shape="poly" coords="315,975,276,978,273,963,273,931,280,778" class="puff" />
+    <area alt="" title="" shape="poly" coords="306,822,286,743,299,715,347,801" class="puff" />
+</map>
+
+<script>
+var image = $('#mapa');
+	$('.puff').on('click',function(){
+		console.log('Clicked');
+	});
+ 	$('area').on('click',function(){
+ 		console.log($('area').attr("title"));
+    });
+	$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});
+/*
+image.mapster({
+    clickNavigate: true,
+    mapKey: 'data-state',
+    render_select: {
+        fillColor: 'ff0000',
+        stroke: true,
+        strokeColor: '00ff00',
+        strokeWidth: 2
+    },
+    areas: [{
+        key: 'really-cold',
+        render_select: {
+            fillColor: '0000ff'
+        }
+        },
+        {
+            key: 'new-england',
+            render_select: {
+                fillColor: '44ff44'
+            }
+        }
+        ]
+});
+
+$('.showhide').on('click', function() {
+    var link = $(this),
+        panel = $('.box-inner');
+    if (link.hasClass('hidden')) {
+        panel.show('slow');
+        link.removeClass('hidden');
+        link.text('[hide]');
+    } else {
+        panel.hide('slow');
+        link.addClass('hidden');
+        link.text('[show]');
+    }
+});*/
+</script>
+</body>
+</html>

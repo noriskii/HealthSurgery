@@ -1,0 +1,38 @@
+body
+{
+     background-color: blue;
+}
+p
+{
+   padding-bottom: 10px;   
+    
+}
+li
+{
+    list-style-position: outside;
+    list-style-type: disc;
+    padding-bottom: 6px;  
+    margin-left: 20px;
+}
+
+a.showhide
+{
+   text-decoration: none;   
+}
+.box
+{
+    white-space: normal;
+    width: 100%;
+    padding-bottom: 6px;
+}
+.box-inner
+{
+    border: 1px solid black;   
+    padding: 6px;
+    overflow-x: hidden;    
+    white-space: normal;
+}
+
+area:hover {
+    background-color: #000000;
+}
