@@ -1,2 +1,0 @@
-$('#collapseOne').collapse();
-$('#collapseTwo').collapse();
