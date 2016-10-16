@@ -14,7 +14,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>Seja bem vindo ao Inicio do Projeto</h1>
 </body>
 </html>
 </jsp:root>

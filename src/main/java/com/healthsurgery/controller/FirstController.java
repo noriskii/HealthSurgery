@@ -13,8 +13,8 @@ public class FirstController {
 	}
 
 	@Get("/")
-    public String index() {
+    public void index() {
         System.out.println("primeiro projeto com VRaptor 4!");
-        return "Primeiro Teste, Olá mundo!";
+        //return "Primeiro Teste, Olá mundo!";
     }
 }
