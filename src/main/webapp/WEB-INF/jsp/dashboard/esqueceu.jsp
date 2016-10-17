@@ -17,19 +17,19 @@
                         <i class="fa fa-reply fa-2x" aria-hidden="true"></i>
                     </a>
                 <div class="panel-heading text-center">
-                    <h3><b>Recuperar Senha</b></h3>
+                    <h3><b>Esqueceu sua Senha?</b></h3>
                 </div>
                 <div class="panel-body">
+				<form action="<c:url value='/dashboard/enviar/email'/>" method="get">
                     <div class="row">
-                        <form action="">
                             <label for="">Digite seu e-mail:</label>
-                            <input type="text" class="form-control" placeholder="E-mail para envio...">
-                        </form>
+                            <input type="text" class="form-control" placeholder="E-mail para envio..." name="email" value="${email}">
                     </div>
                     <hr class="hr-md">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-2 col-md-offset-2 col-lg-offset-4">
-                        <input type="submit" class="btn btn-primary btn-block" value="Enviar" onclick="message()">
+                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
                     </div>
+               	</form>
                 </div>
             </div>
         </div>

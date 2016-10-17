@@ -24,9 +24,21 @@
                 <div class="panel-heading text-center">
                     <h3><b>Login</b></h3>
                 </div>
+                <c:if test="${not empty msg}">
+					<div class="alert alert-success" style="text-align: center">${msg}</div>
+				</c:if>
+				<form>
+				<c:if test="${not empty errors}">
+					<div class="alert alert-danger">
+						<c:forEach var="error" items="${errors}">
+							${error.category} - ${error.message}<br />
+						</c:forEach>			
+					</div>
+				</c:if>
+				</form>
                 <div class="panel-body">
-                	<form action="<c:url value='/usuario/medico'/>" method="post">
-                    <div class="row">           
+                	<form action="<c:url value='/usuario/medico'/>">
+                    <div class="row">
                             <label for="">E-mail:</label>
                             <input type="email" class="form-control" placeholder="Digite seu E-Mail...">
                     </div>

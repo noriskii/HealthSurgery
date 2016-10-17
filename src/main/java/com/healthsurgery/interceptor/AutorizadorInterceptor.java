@@ -1,8 +1,6 @@
 package com.healthsurgery.interceptor;
 
-import br.com.caelum.vraptor.Intercepts;
-
-@Intercepts
+//@Intercepts
 public class AutorizadorInterceptor {
 	
 	/*
