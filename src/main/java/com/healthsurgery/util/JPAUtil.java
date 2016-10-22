@@ -9,6 +9,8 @@ public class JPAUtil {
 	public static EntityManager criaEntityManager() {
 		EntityManagerFactory factory = Persistence
 				.createEntityManagerFactory("default");
+		System.out.println("conectado");
 		return factory.createEntityManager();
 	}
+	
 }
