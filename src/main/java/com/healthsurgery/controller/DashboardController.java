@@ -35,7 +35,7 @@ public class DashboardController {
 		
 	}
 
-	@Get("/dashboard/enviar/{email}")
+	@Get("/dashboard/enviar")
 	public void enviar(String email) {
 		validator.onErrorUsePageOf(this).esqueceu();
 

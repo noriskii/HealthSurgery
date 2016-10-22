@@ -33,14 +33,13 @@ public class MedicoDAO {
 		em.remove(busca(medico));
 	}
 
-	@SuppressWarnings("unchecked")
-	public List<Medico> busca(Medico medico) {
-		return (List<Medico>) em.find(Medico.class, medico.getRegProfissionalMedico());
+	public Medico busca(Medico medico) {
+		return em.find(Medico.class, medico.getRegProfissionalMedico());
 	}
 
 	@SuppressWarnings("unchecked")
 	public List<Medico> buscaNome(Medico medico) {
-		return (List<Medico>) em.createQuery("select med from medico med where nomeMedico like ” + medico.getNomeMedico()).getResultList()");
+		return em.createQuery("select med from medico med where nomeMedico like " + medico.getNomeMedico()).getResultList();
 	}
 
 	/*public void busca(Medico medico) {
@@ -49,7 +48,7 @@ public class MedicoDAO {
 
 	@SuppressWarnings("unchecked")
 	public List<Medico> lista() {
-		return (List<Medico>) em.createQuery("select med from medico med”).getResultList()");
+		return em.createQuery("select med from medico med").getResultList();
 	}
 	
 }

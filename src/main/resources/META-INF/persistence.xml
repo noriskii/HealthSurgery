@@ -7,15 +7,29 @@
 	
 	<persistence-unit name="default">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.healthsurgery.model.Corpo</class>
+		<class>com.healthsurgery.model.CorpoQuestionario</class>
+		<class>com.healthsurgery.model.Especialidade</class>
+		<class>com.healthsurgery.model.Login</class>
+		<class>com.healthsurgery.model.Medico</class>
+		<class>com.healthsurgery.model.OpcoesRespostas</class>
+		<class>com.healthsurgery.model.Paciente</class>
+		<class>com.healthsurgery.model.Pergunta</class>
+		<class>com.healthsurgery.model.Psicoterapia</class>
+		<class>com.healthsurgery.model.Psiquiatria</class>
+		<class>com.healthsurgery.model.Questionario</class>
+		<class>com.healthsurgery.model.Resposta</class>
+		<class>com.healthsurgery.model.ResultadoQuestionario</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:mariadb://127.0.0.1:3306/bd_hsbddd"/>
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="" />
 			
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
-			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+			<!--<property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>-->
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.format_sql" value="false" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 		</properties>
 	</persistence-unit>

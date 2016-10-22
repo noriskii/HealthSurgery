@@ -8,7 +8,7 @@ import com.healthsurgery.util.JPAUtil;
 
 public class EntityManagerProducer {
 	@Produces @RequestScoped
-	public EntityManager criaEM(){
+    public EntityManager criaEM(){
 		return JPAUtil.criaEntityManager();
 	}
 	
