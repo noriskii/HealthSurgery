@@ -23,19 +23,19 @@
                 <hr class="hr-black">
                 <div class="panel-body">
                     <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-                        <form action="<c:url value='/usuario/adiciona'/>" method="get">
+                        <form action="<c:url value='/usuario/adiciona'/>" method="post">
                         <div class="row">
                                 <label for="">Nome:</label>
-                                <input type="text" class="form-control" placeholder="Nome" name="nomeMedico" value="${nomeMedico}">
+                                <input type="text" class="form-control" placeholder="Nome" name="medico.nomeMedico" value="${medico.nomeMedico}">
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetSpace">
                                     <label for="">Registro Profissional:</label>
-                                    <input type="number" class="form-control" placeholder="Registro Médico Profissional" name="regProfissionalMedico" value="${regProfissionalMedico}">
+                                    <input type="number" class="form-control" placeholder="Registro Médico Profissional" name="medico.regProfissionalMedico" value="${medico.regProfissionalMedico}">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetSpaceRspv">
                                 <label for="">Especialidade:</label>
-                                <select class="form-control" id="cbbxEspec" name="idEspecialidade">
+                                <select class="form-control" id="cbbxEspec" name="medico.idEspecialidade">
                                     <option value="" disabled selected hidden>Selecione...</option>
                                     <c:forEach items="${especialidadeList}" var="especialidade">
 					                    <option value="${especialidade.idEspecialidade}">${especialidade.nomeEspecialidade}</option>
@@ -46,25 +46,25 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
                                     <label for="">Nome da instituição:</label>
-                                    <input type="text" class="form-control" placeholder="Nome da instituição" name="instituicaoMedico" value="${instituicaoMedico}">
+                                    <input type="text" class="form-control" placeholder="Nome da instituição" name="medico.instituicaoMedico" value="${medico.instituicaoMedico}">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 resetSpace">
                                     <label for="">CEP:</label>
-                                    <input type="number" class="form-control" placeholder="CEP" name="cepMedico" value="${cepMedico}">
+                                    <input type="number" class="form-control" placeholder="CEP" name="medico.cepMedico" value="${medico.cepMedico}">
                             </div>
                             <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 resetSpaceRspv">
                                     <label for="">Cidade:</label>
-                                    <input type="text" class="form-control" placeholder="Cidade" name="cidadeMedico" value="${cidadeMedico}">
+                                    <input type="text" class="form-control" placeholder="Cidade" name="medico.cidadeMedico" value="${medico.cidadeMedico}">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 resetSpaceRspv">
                                     <label for="">Estado:</label>
-                                    <input type="text" class="form-control" placeholder="Estado" name="estadoMedico" value="${estadoMedico}">
+                                    <input type="text" class="form-control" placeholder="Estado" name="medico.estadoMedico" value="${medico.estadoMedico}">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetSpaceRspv">
                                     <label for="">País:</label>
-                                    <input type="text" class="form-control" placeholder="País" name="paisMedico" value="${paisMedico}">
+                                    <input type="text" class="form-control" placeholder="País" name="medico.paisMedico" value="${medico.paisMedico}">
                             </div>
                         </div>
                         <br>
@@ -74,13 +74,13 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
                                     <label for="">E-mail:</label>
-                                    <input type="email" class="form-control" placeholder="E-mail" name="email" value="${email}">
+                                    <input type="email" class="form-control" placeholder="E-mail" name="email" value="${medico.email}">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 resetSpace">
                                     <label for="">Senha:</label>
-                                    <input type="password" class="form-control" placeholder="Sua Senha" name="senha" value="${senha}">
+                                    <input type="password" class="form-control" placeholder="Sua Senha" name="senha" value="${medico.senha}">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 resetSpaceRspv">
                                     <label for="">Redigite a senha:</label>
@@ -90,7 +90,7 @@
                         <br>
                         <div class="row">
 	                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 resetSpaceRspv">
-	                            <input type="submit" class="btn btn-primary btn-block" value="Cadastrar">
+	                            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
 	                        </div>
 	                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 resetSpaceRspv">
 	                            <a href="#" class="btn btn-primary btn-block btn-text-lg" role="button-block">Limpar</a>

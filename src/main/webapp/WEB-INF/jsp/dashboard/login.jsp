@@ -40,16 +40,16 @@
                                 </c:if>
                             </form>
                             <div class="panel-body">
-                                <form action="<c:url value='/usuario/medico'/>">
+                                <form action="<c:url value='/dashboard/logar'/>" method="post">
                                     <div class="row">
                                         <label for="">E-mail:</label>
-                                        <input type="email" class="form-control" placeholder="Digite seu E-Mail...">
+                                        <input type="email" class="form-control" placeholder="Digite seu E-Mail..." name="login.email" value="${login.email}">
                                     </div>
                                     <br>
 
                                     <div class="row">
                                         <label for="">Senha:</label>
-                                        <input type="password" class="form-control" placeholder="Digite sua Senha...">
+                                        <input type="password" class="form-control" placeholder="Digite sua Senha..." name="login.senha" value="${login.senha}">
                                         <a href="<c:url value='/dashboard/esqueceu'/>">
                                             <p class="text-primary">Esqueceu sua senha?</p>
                                         </a>

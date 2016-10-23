@@ -20,16 +20,17 @@
                                 <h3><b>Adicionar Especialidade</b></h3>
                             </div>
                             <div class="panel-body">
-                                <div class="row">
-                                    <form action="">
+	                            <form action="<c:url value='/usuario/espec'/>" method="post">
+                                    <div class="row">
                                         <label for="">Nome da Especialidade:</label>
-                                        <input type="text" class="form-control" placeholder="Especialidade..." name="nomeEspecialidade" value="${nomeEspecialidade}">
-                                    </form>
-                                </div>
-                                <hr class="hr-md">
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-3 col-md-offset-3 col-lg-offset-4">
-                                    <input type="submit" class="btn btn-primary btn-block" value="Adicionar">
-                                </div>
+                                        <input type="text" class="form-control" placeholder="Especialidade..." name="especialidade.nomeEspecialidade" value="${nomeEspecialidade}">
+                                    
+                                	</div>
+                                	<hr class="hr-md">
+                                	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-3 col-md-offset-3 col-lg-offset-4">
+                                   		<button type="submit" class="btn btn-primary btn-block">Adicionar</button>
+                                	</div>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -24,45 +24,43 @@
                                     <form action="<c:url value='/usuario/medico'/>" method="get">
                                         <div class="row">
                                             <label for="">Nome:</label>
-                                            <input type="text" class="form-control" placeholder="Nome" name="nomeMedico" value="${nomeMedico}">
+                                            <input type="text" class="form-control" placeholder="Nome" name="nomeMedico" value="<c:out value="${medico.nomeMedico}"/>">
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetSpace">
                                                 <label for="">Registro Profissional:</label>
-                                                <input type="number" class="form-control" placeholder="Registro Médico Profissional" name="regProfissionalMedico" value="${regProfissionalMedico}">
+                                                <input type="number" class="form-control" placeholder="Registro Médico Profissional" name="regProfissionalMedico" value="<c:out value="${medico.regProfissionalMedico}"/>">
                                             </div>
                                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetSpaceRspv">
                                                 <label for="">Especialidade:</label>
                                                 <select class="form-control" id="cbbxEspec" name="idEspecialidade">
                                                     <option value="" disabled selected hidden>Selecione...</option>
-                                                    <c:forEach items="${especialidadeList}" var="especialidade">
-                                                        <option value="${especialidade.id}">${especialidade.nome}</option>
-                                                    </c:forEach>
+                                                        <option value="<c:out value="${medico.idEspecialidade}"/>"><c:out value="${medico.idEspecialidade}"/></option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
                                                 <label for="">Nome da instituição:</label>
-                                                <input type="text" class="form-control" placeholder="Nome da instituição" name="instituicaoMedico" value="${instituicaoMedico}">
+                                                <input type="text" class="form-control" placeholder="Nome da instituição" name="instituicaoMedico" value="<c:out value="${medico.instituicaoMedico}"/>">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 resetSpace">
                                                 <label for="">CEP:</label>
-                                                <input type="number" class="form-control" placeholder="CEP" name="cepMedico" value="${cepMedico}">
+                                                <input type="number" class="form-control" placeholder="CEP" name="cepMedico" value="<c:out value="${medico.cepMedico}"/>">
                                             </div>
                                             <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 resetSpaceRspv">
                                                 <label for="">Cidade:</label>
-                                                <input type="text" class="form-control" placeholder="Cidade" name="cidadeMedico" value="${cidadeMedico}">
+                                                <input type="text" class="form-control" placeholder="Cidade" name="cidadeMedico" value="<c:out value="${medico.cidadeMedico}"/>">
                                             </div>
                                             <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 resetSpaceRspv">
                                                 <label for="">Estado:</label>
-                                                <input type="text" class="form-control" placeholder="Estado" name="estadoMedico" value="${estadoMedico}">
+                                                <input type="text" class="form-control" placeholder="Estado" name="estadoMedico" value="<c:out value="${medico.estadoMedico}"/>">
                                             </div>
                                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetSpaceRspv">
                                                 <label for="">País:</label>
-                                                <input type="text" class="form-control" placeholder="País" name="paisMedico" value="${paisMedico}">
+                                                <input type="text" class="form-control" placeholder="País" name="paisMedico" value="<c:out value="${medico.paisMedico}"/>">
                                             </div>
                                         </div>
                                         <br>

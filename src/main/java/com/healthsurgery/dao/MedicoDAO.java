@@ -18,37 +18,37 @@ public class MedicoDAO {
 	
 	@Deprecated
 	public MedicoDAO() {
-		this(null); // para uso do CDI
+		this(null);
 	}
-	
+
 	public void adiciona(Medico medico) {
+    	em.getTransaction().begin();
 		em.persist(medico);
+		em.getTransaction().commit();
 	}
-	
-	public void atualiza(Medico medico) {
-		 em.merge(medico);
+
+	@SuppressWarnings("unchecked")
+	public List<Medico> lista() {
+		return em.createQuery("select med from Medico med").getResultList();
 	}
 
 	public void remove(Medico medico) {
+		em.getTransaction().begin();
 		em.remove(busca(medico));
+		em.getTransaction().commit();
 	}
-
+	
 	public Medico busca(Medico medico) {
 		return em.find(Medico.class, medico.getRegProfissionalMedico());
 	}
 
-	@SuppressWarnings("unchecked")
-	public List<Medico> buscaNome(Medico medico) {
-		return em.createQuery("select med from medico med where nomeMedico like " + medico.getNomeMedico()).getResultList();
+	public void atualiza(Medico medico) {
+		em.getTransaction().begin();
+		em.merge(medico);
+		em.getTransaction().commit();
 	}
 
-	/*public void busca(Medico medico) {
-        em.find(Produto.class, medico.getRegProfissionalMedico());
-    }*/
-
-	@SuppressWarnings("unchecked")
-	public List<Medico> lista() {
-		return em.createQuery("select med from medico med").getResultList();
+	public Medico carregaMedico(int registoMedico) {
+		return em.find(Medico.class, registoMedico);
 	}
-	
 }
