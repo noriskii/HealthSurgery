@@ -14,31 +14,23 @@ public class Paciente {
 	@Id @GeneratedValue
 	private int idPaciente;
 	
-	@NotEmpty
 	private String CPFPaciente;
 	
 	@NotEmpty
 	private String nomePaciente;
 	
-	@NotEmpty
 	private String sexoBiologicoPaciente;
 	
-	@NotEmpty
 	private String orientacaoSexualPaciente;
 	
-	@NotEmpty
 	private String identidadeGeneroPaciente;
 	
-	@NotEmpty
 	private Date dtNascimentoPaciente;
 	
-	@NotEmpty
 	private String estadoCivilPaciente;
 	
-	@NotEmpty
 	private String etniaPaciente;
 	
-	@NotEmpty
 	private String escolaridadePaciente;
 	
 	@NotEmpty
@@ -94,8 +86,8 @@ public class Paciente {
 		return CPFPaciente;
 	}
 
-	public void setCPFPaciente(String cPFPaciente) {
-		CPFPaciente = cPFPaciente;
+	public void setCPFPaciente(String CPFPaciente) {
+		this.CPFPaciente = CPFPaciente;
 	}
 
 	public String getNomePaciente() {

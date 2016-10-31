@@ -19,68 +19,60 @@
                                 <h3><b>Médico</b></h3>
                             </div>
                             <hr class="hr-black">
+                            <c:if test="${not empty msg}">
+                                <div class="alert alert-success" style="text-align: center">${msg}</div>
+                            </c:if>
+                            <form>
+                                <c:if test="${not empty errors}">
+                                    <div class="alert alert-danger">
+                                        <c:forEach var="error" items="${errors}">
+                                            ${error.message}
+                                            <br />
+                                        </c:forEach>
+                                    </div>
+                                </c:if>
+                            </form>
                             <div class="panel-body">
                                 <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-                                    <form action="<c:url value='/usuario/medico'/>" method="get">
+                                    <form action="<c:url value='/usuario/atualizar'/>" method="get">
                                         <div class="row">
                                             <label for="">Nome:</label>
-                                            <input type="text" class="form-control" placeholder="Nome" name="nomeMedico" value="<c:out value="${medico.nomeMedico}"/>">
+                                            <input type="text" class="form-control" placeholder="Nome" name="medico.nomeMedico" value="<c:out value="${medico.nomeMedico}"/>">
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetSpace">
                                                 <label for="">Registro Profissional:</label>
-                                                <input type="number" class="form-control" placeholder="Registro Médico Profissional" name="regProfissionalMedico" value="<c:out value="${medico.regProfissionalMedico}"/>">
+                                                <input type="number" class="form-control" placeholder="Registro Médico Profissional" name="medico.regProfissionalMedico" value="<c:out value="${medico.regProfissionalMedico}"/>" disabled>
                                             </div>
                                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetSpaceRspv">
                                                 <label for="">Especialidade:</label>
-                                                <select class="form-control" id="cbbxEspec" name="idEspecialidade">
-                                                    <option value="" disabled selected hidden>Selecione...</option>
-                                                        <option value="<c:out value="${medico.idEspecialidade}"/>"><c:out value="${medico.idEspecialidade}"/></option>
+                                                <select class="form-control" id="cbbxEspec" name="medico.idEspecialidade">
+                                                        <option value="<c:out value="${medico.idEspecialidade}"/>" selected><c:out value="${medico.idEspecialidade}"/></option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
                                                 <label for="">Nome da instituição:</label>
-                                                <input type="text" class="form-control" placeholder="Nome da instituição" name="instituicaoMedico" value="<c:out value="${medico.instituicaoMedico}"/>">
+                                                <input type="text" class="form-control" placeholder="Nome da instituição" name="medico.instituicaoMedico" value="<c:out value="${medico.instituicaoMedico}"/>">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 resetSpace">
                                                 <label for="">CEP:</label>
-                                                <input type="number" class="form-control" placeholder="CEP" name="cepMedico" value="<c:out value="${medico.cepMedico}"/>">
+                                                <input type="number" class="form-control" placeholder="CEP" name="medico.cepMedico" value="<c:out value="${medico.cepMedico}"/>">
                                             </div>
                                             <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 resetSpaceRspv">
                                                 <label for="">Cidade:</label>
-                                                <input type="text" class="form-control" placeholder="Cidade" name="cidadeMedico" value="<c:out value="${medico.cidadeMedico}"/>">
+                                                <input type="text" class="form-control" placeholder="Cidade" name="medico.cidadeMedico" value="<c:out value="${medico.cidadeMedico}"/>">
                                             </div>
                                             <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 resetSpaceRspv">
                                                 <label for="">Estado:</label>
-                                                <input type="text" class="form-control" placeholder="Estado" name="estadoMedico" value="<c:out value="${medico.estadoMedico}"/>">
+                                                <input type="text" class="form-control" placeholder="Estado" name="medico.estadoMedico" value="<c:out value="${medico.estadoMedico}"/>">
                                             </div>
                                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetSpaceRspv">
                                                 <label for="">País:</label>
-                                                <input type="text" class="form-control" placeholder="País" name="paisMedico" value="<c:out value="${medico.paisMedico}"/>">
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="row">
-                                            <label for="">Acesso ao Sistema:</label>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 resetSpace">
-                                                <label for="">E-mail:</label>
-                                                <input type="email" class="form-control" placeholder="E-mail" name="email" value="${email}">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 resetSpace">
-                                                <label for="">Senha:</label>
-                                                <input type="password" class="form-control" placeholder="Sua Senha" name="senha" value="${senha}">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 resetSpaceRspv">
-                                                <label for="">Redigite a senha:</label>
-                                                <input type="password" class="form-control" placeholder="Redigite a Senha">
+                                                <input type="text" class="form-control" placeholder="País" name="medico.paisMedico" value="<c:out value="${medico.paisMedico}"/>">
                                             </div>
                                         </div>
                                         <br>

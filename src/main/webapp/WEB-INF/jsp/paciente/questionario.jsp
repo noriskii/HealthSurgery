@@ -105,8 +105,8 @@
                     <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
                         <div class="row">
                             <form action="">
-                                <label for="">Nome:</label>
-                                <label for="">Puxar nome do BD</label>
+                                <label>Nome:</label>
+                                <label>${pacienteAtual.getPaciente().getNomePaciente()}</label>
                             </form>
                         </div>
                         <div class="row">

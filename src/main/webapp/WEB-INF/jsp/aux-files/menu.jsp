@@ -13,7 +13,7 @@
         <div class="sidebar-image">
             <img src="../source/media/iconUser.png" alt="">
         </div>
-        <a href="#settings-dropdown" class="sidebar-brand" data-toggle="dropdown">user@email.com<b class="caret"></b></a>
+        <a href="#settings-dropdown" class="sidebar-brand" data-toggle="dropdown">${usuarioLogado.getUsuario().getEmail()}<b class="caret"></b></a>
     </div>
     <ul class="nav sidebar-nav">
         <li class="dropdown">

@@ -1,13 +1,5 @@
 package com.healthsurgery.util;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.persistence.EntityManager;
-
-import com.healthsurgery.dao.EspecialidadesDAO;
-import com.healthsurgery.model.Especialidade;
-
 public class CreateTest {
 
 	public static void main(String[] args) {

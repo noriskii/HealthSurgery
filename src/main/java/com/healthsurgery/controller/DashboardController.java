@@ -59,7 +59,7 @@ public class DashboardController {
 			validator.onErrorUsePageOf(this).login();
 		}
 		usuarioLogado.setUsuario(loginDAO.getRegistro(login));
-		result.redirectTo(UsuarioController.class).medico(usuarioLogado.getUsuario().getRegProfissionalMedico());
+		result.redirectTo(UsuarioController.class).medico();
 	}
 	
 	//validator.onErrorUsePageOf(this).formulario();

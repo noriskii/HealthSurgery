@@ -17,29 +17,35 @@
                 <div class="panel-heading text-center">
                     <h3><b>Alterar Senha</b></h3>
                 </div>
+                <form>
+	                <c:if test="${not empty errors}">
+	                    <div class="alert alert-danger">
+	                        <c:forEach var="error" items="${errors}">
+	                            ${error.category} - ${error.message}
+	                            <br />
+	                        </c:forEach>
+	                    </div>
+	                </c:if>
+	            </form>
                 <div class="panel-body">
-                    <div class="row">
-                        <form action="">
-                            <label for="">Senha Atual:</label>
-                            <input type="password" class="form-control" placeholder="Senha Atual...">
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <label for="">Nova Senha:</label>
-                            <input type="password" class="form-control" placeholder="Nova Senha...">
-                        </form>
-                    </div>
-                    <div class="row">
-                        <form action="">
-                            <label for="">Redigite a Senha:</label>
-                            <input type="password" class="form-control" placeholder="Nova Senha...">
-                        </form>
-                    </div>
-                    <hr class="hr-md">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-2 col-md-offset-2 col-lg-offset-4">
-                        <input type="submit" class="btn btn-primary btn-block" value="Atualizar">
-                    </div>
+                	<form action="<c:url value='/usuario/novasenha'/>">
+	                    <div class="row">
+	                         <label for="">Senha Atual:</label>
+	                         <input type="password" class="form-control" placeholder="Senha Atual..." name="senhaAntiga" value="${senhaAntiga}">
+	                    </div>
+	                    <div class="row">
+		                    <label for="">Nova Senha:</label>
+		                    <input type="password" class="form-control" placeholder="Nova Senha..." name="senhaNova" value="${senhaNova}">
+	                    </div>
+	                    <div class="row">
+	                        <label for="">Redigite a Senha:</label>
+	                        <input type="password" class="form-control" placeholder="Nova Senha..." name="confirmaSenha" value="${confirmaSenhaS}">
+	                    </div>
+	                    <hr class="hr-md">
+	                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-2 col-md-offset-2 col-lg-offset-4">
+	                        <input type="submit" class="btn btn-primary btn-block" value="Atualizar">
+	                    </div>
+                    </form>
                 </div>
             </div>
         </div>
