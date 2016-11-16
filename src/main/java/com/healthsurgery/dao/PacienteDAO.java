@@ -1,5 +1,6 @@
 package com.healthsurgery.dao;
 
+import java.sql.ResultSet;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -21,10 +22,11 @@ public class PacienteDAO {
 		this(null);
 	}
 
-	public void adiciona(Paciente paciente) {
+	public Paciente adiciona(Paciente paciente) {
     	em.getTransaction().begin();
 		em.persist(paciente);
 		em.getTransaction().commit();
+		return paciente;
 	}
 
 	@SuppressWarnings("unchecked")
@@ -52,7 +54,7 @@ public class PacienteDAO {
 		return em.find(Paciente.class, idPaciente);
 	}
 	
-	public int carregaID(Paciente paciente) {
+	/*public int carregaID(Paciente paciente) {
 		return (int) em.createQuery("SELECT p.idPaciente FROM Paciente p "
 				+ "WHERE CPFPaciente = '"+ paciente.getCPFPaciente() 
 				+ "' AND nomePaciente = '" + paciente.getNomePaciente()
@@ -68,7 +70,7 @@ public class PacienteDAO {
 				+ "' AND estadoPaciente = '" + paciente.getEstadoPaciente()
 				+ "' AND paisPaciente = '" + paciente.getPaisPaciente()
 				+ "' AND obsPaciente = '" + paciente.getObsPaciente()
-				+ "' AND dtNascimentoPaciente = '" + paciente.getDtNascimentoPaciente() + "'").getSingleResult();
+				+ "' AND dtNascimentoPaciente = '" + paciente.getDtNascimentoPaciente() + "'").	getSingleResult();
 		
-	}
+	}*/
 }

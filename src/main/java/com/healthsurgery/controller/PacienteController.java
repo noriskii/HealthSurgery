@@ -39,19 +39,13 @@ public class PacienteController {
 
 	@Path("/paciente/novo")
 	public void novo() {
-		
 	}
 	
 	@Path("/paciente/dados")
 	public Paciente dados() {
 		//Paciente paciente = pacienteDAO.carregaPaciente()
 		return null;
-	}
-	
-	@Path("/paciente/questionario")
-	public void questionario() {
-		
-	}
+	}	
 	
 	@Path("/paciente/adiciona")
 	public void adiciona(Paciente paciente, String data) throws ParseException {
@@ -76,10 +70,8 @@ public class PacienteController {
 				"\n paisPac: - " + paciente.getPaisPaciente() +
 				"\n obsPac: - " + paciente.getObsPaciente() + "\n");*/
 		//System.out.println("============================================= " + paciente.getDtNascimentoPaciente() + " =============================================");
-		pacienteDAO.adiciona(paciente);
-		pacienteAtual.setPaciente(paciente);
-		pacienteAtual.getPaciente().setIdPaciente(pacienteDAO.carregaID(paciente)); 
-		result.redirectTo(this).questionario();
+		pacienteAtual.setPaciente(pacienteDAO.adiciona(paciente));
+		result.redirectTo(FuzzyController.class).questionario();
 	}
 	
 	

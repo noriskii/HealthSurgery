@@ -30,6 +30,8 @@ public class Medico {
 	private String paisMedico;
 	
 	private int idEspecialidade;
+	
+	private boolean admin;
 
 	public Medico() {}
 	
@@ -109,5 +111,12 @@ public class Medico {
 		this.idEspecialidade = idEspecialidade;
 	}
 	
+	public boolean isAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
+	}
 	
 }
