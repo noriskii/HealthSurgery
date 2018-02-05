@@ -1,19 +1,13 @@
-# HealthSurgery -  Body Dysmorphic Diagnosis 
 
-HealthSurgery é um projeto de Trabalho de Conclusão de Curso (TCC) elaborado em 2016 com o foco em trazer um software de apoio a diagnósticos médicos.
+[comment]: <> (![ETRACKS])
+# E-Tracks - Environment Track System
 
-O Sistema conta com uma interface WEB, responsiva, para que o médico possa utilizar em tablets e computadores, que utilia-se da lógica Fuzzy para o Apoio ao Diagnóstico.
+<center>
 
-## O que é Body Dysmorphic Disorder
+![Imgur](https://i.imgur.com/Ff5PQcq.gif)
 
-Também conhecido como BDD, o Body Dysmorphic Disorder é o distúrbio capaz de fazer oom que uma pessoa se sinta infeliz com uma parte de seu corpo e culpe essa parte do corpo como a causa de todos os seus problemas, quantificar até que certo ponto a pessoa pode estar obcecada com essa parte em especifíco pode dizer qual será o nível de sofrimento, e se "repararmos" essa parte, seus problemas podem ou não se resolver.
+## **This README is**
 
-## E como o HealthSurgery faz isso?
+![Imgur](https://i.imgur.com/xQl9vJj.png)
 
-Através de uma triagem, composta de váriaas perguntas e uma réplica clicável do corpo humano, o médico que estará utilizando o software irá conseguir apurar informação o bastante para que a aplicação possa fazer seus cálculos e entregar o nível de sofrimento que o paciente pode sofrer ao modificar a parte desejada do corpo.
-
-## Que tecnologia utilizamos?
-- Bootstrap;
-- HTML, CSS e Javascript;
-- VRaptor 4;
-- MySQL Server.
+</center>
